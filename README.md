@@ -6,7 +6,7 @@ To create:
 
 1. Build and run image for Amazon Linux with Python 3 (Dockerfile), commands in `run.sh`:
 - `docker build -t amazonlinux-python3 .`
-- `docker run -t -i -p 80:80 -v ``pwd``:~/ amazonlinux-python3`
+- `docker run -t -i -p 80:80 -v $(pwd):/root amazonlinux-python3`
 
 2. Run the commands in `compile.sh` to install the python `requirements.txt` dependencies, copy your own `lambda_function.py` and zip the files into a .zip package
 
